@@ -1,0 +1,17 @@
+table, th, td {
+    border: none;
+border-style: none;
+}
+#cssTable td
+{
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 30px;
+}
+table.cssFirstRow  td
+{
+    width: 30px;
+    background-color: white;
+    color: white;
+}
