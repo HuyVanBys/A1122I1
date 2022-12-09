@@ -1,17 +1,28 @@
+.table-striped {
+    color: black;
+}
 table, th, td {
-    border: none;
-border-style: none;
+/*    border: none;*/
+/*border-style: none;*/
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 #cssTable td
 {
-    text-align: center;
+    /*text-align: center;*/
     vertical-align: middle;
     font-weight: bold;
     font-size: 30px;
 }
-table.cssFirstRow  td
+.cssFirstCol
 {
-    width: 30px;
-    background-color: white;
-    color: white;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 10px;
+    /*background-color: white;*/
+    /*color: white;*/
+}
+.cssFirstRow
+{
+    text-align: center;
 }
