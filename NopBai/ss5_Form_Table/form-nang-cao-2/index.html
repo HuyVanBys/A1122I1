@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {box-sizing: border-box;}
+        ul {list-style-type: none;}
+        body {font-family: "Times New Roman", sans-serif;}
+
+        .month {
+            padding: 0px 25px;
+            width: 100%;
+            background: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+        }
+        .dayBold {
+            font-weight: bold;
+        }
+        .dayBold7 {
+            font-weight: bold;
+            color: blue;
+        }
+        .dayBold2 {
+            font-weight: bold;
+            color: white;
+        }
+        .dayBold1 {
+            font-weight: bold;
+            color: red;
+        }
+        .daynormal{
+            font-weight: normal;
+        }
+        .daynormal7{
+            font-weight: normal;
+            color: black;
+        }
+        .daynormal1{
+            font-weight: normal;
+            color: black;
+        }
+        .month ul li {
+            color: blue;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .cssFirstRow
+        {
+            text-align: center;
+        }
+        .month .prev {
+            float: left;
+            padding-top: 10px;
+        }
+
+        .month .next {
+            float: right;
+            padding-top: 10px;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 10px 0;
+            background-color: #ddd;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+            text-align: center;
+        }
+
+        .days {
+            padding: 10px 0;
+            background: #eee;
+            margin: 0;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size:12px;
+            color: #777;
+        }
+
+        .days li .active {
+            padding: 5px;
+            background: #1abc9c;
+            color: white !important
+        }
+
+        /* Add media queries for smaller screens */
+        @media screen and (max-width:720px) {
+            .weekdays li, .days li {width: 13.1%;}
+        }
+
+        @media screen and (max-width: 420px) {
+            .weekdays li, .days li {width: 12.5%;}
+            .days li .active {padding: 2px;}
+        }
+
+        @media screen and (max-width: 290px) {
+            .weekdays li, .days li {width: 12.2%;}
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Lịch tháng 10-2009</title>
+</head>
+<body>
+
+<!--<h1>CSS Calendar</h1>-->
+
+<div class="month">
+    <ul>
+        <!--        <li class="prev">&#10094;</li>-->
+        <!--        <li class="next">&#10095;</li>-->
+        <li>
+            <p>Tháng 10 - October</p><br>
+            <!--            <span style="font-size:18px">2021</span>-->
+        </li>
+    </ul>
+</div>
+
+<table align="center" width="100%" height="60" id="cssTable" class="table-striped">
+    <tr>
+        <td width="100" height="60" bgcolor="red" class="cssFirstRow"> <p class="dayBold2">C.Nhật</p> </td>
+        <td width="100" height="60" bgcolor="orange" class="cssFirstRow"> <p class="dayBold2">T.Hai</p> </td>
+        <td width="100" height="60" bgcolor="orange" class="cssFirstRow"> <p class="dayBold2">T.Ba</p> </td>
+        <td width="100" height="60" bgcolor="orange" class="cssFirstRow"> <p class="dayBold2">T.Tư</p> </td>
+        <td width="100" height="60" bgcolor="orange" class="cssFirstRow"> <p class="dayBold2">T.Năm</p> </td>
+        <td width="100" height="60" bgcolor="orange" class="cssFirstRow"> <p class="dayBold2">T.Sáu</p> </td>
+        <td width="100" height="60" bgcolor="blue" class="cssFirstRow"> <p class="dayBold2">T.Bảy</p> </td>
+    </tr>
+</table>
+<br>
+<ul class="weekdays">
+    <li ><p class="dayBold1">Sun</p></li>
+    <li>Mon</li>
+    <li>Tur</li>
+    <li>Wed</li>
+    <li>Thur</li>
+    <li>Fri</li>
+    <li ><p class="dayBold7">Sat</p></li>
+</ul>
+
+<ul class="days">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li><p class="dayBold">1<sub class="daynormal">13</sub></p></li>
+    <li><p class="dayBold">2<sub class="daynormal">14</sub></p></li>
+    <li><p class="dayBold7">3<sub class="daynormal7">15</sub></p></li>
+    <li><p class="dayBold1">4<sub class="daynormal1">16</sub></p></li>
+    <li><p class="dayBold">5<sub class="daynormal">17</sub></p></li>
+    <li><p class="dayBold">6<sub class="daynormal">18</sub></p></li>
+    <li><p class="dayBold">7<sub class="daynormal">19</sub></p></li>
+    <li><p class="dayBold">8<sub class="daynormal">20</sub></p></li>
+    <li><p class="dayBold">9<sub class="daynormal">21</sub></p></li>
+    <li><p class="dayBold7">10<sub class="daynormal7">22</sub></p></li>
+    <li><p class="dayBold1">11<sub class="daynormal1">23</sub></p></li>
+    <li><p class="dayBold">12<sub class="daynormal">24</sub></p></li>
+    <li><p class="dayBold">13<sub class="daynormal">25</sub></p></li>
+    <li><p class="dayBold">14<sub class="daynormal">26</sub></p></li>
+    <li><p class="dayBold">15<sub class="daynormal">27</sub></p></li>
+    <li><p class="dayBold">16<sub class="daynormal">28</sub></p></li>
+    <li><p class="dayBold7">17<sub class="daynormal7">29</sub></p></li>
+    <li><p class="dayBold1">18<sub class="daynormal1">1.9</sub></p></li>
+    <li><p class="dayBold">19<sub class="daynormal">2</sub></p></li>
+    <li><p class="dayBold">20<sub class="daynormal">3</sub></p></li>
+    <li><p class="dayBold">21<sub class="daynormal">4</sub></p></li>
+    <li><p class="dayBold">22<sub class="daynormal">5</sub></p></li>
+    <li><p class="dayBold">23<sub class="daynormal">6</sub></p></li>
+    <li><p class="dayBold7">24<sub class="daynormal7">7</sub></p></li>
+    <li><p class="dayBold1">25<sub class="daynormal1">8</sub></p></li>
+    <li><p class="dayBold">26<sub class="daynormal">9</sub></p></li>
+    <li><p class="dayBold">27<sub class="daynormal">10</sub></p></li>
+    <li><p class="dayBold">28<sub class="daynormal">11</sub></p></li>
+    <li><p class="dayBold">29<sub class="daynormal">12</sub></p></li>
+    <li><p class="dayBold">30<sub class="daynormal">13</sub></p></li>
+    <li><p class="dayBold7">31<sub class="daynormal7">14</sub></p></li>
+
+</ul>
+
+</body>
+</html>
